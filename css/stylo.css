@@ -1,0 +1,231 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+  font-family: "Ubuntu Mono", monospace;
+}
+
+body {
+  background-color: #000000;
+  flex: 1 0 auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+#main-Container {
+  flex: 1 0 auto;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  row-gap: 30px;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-Header {
+  flex: 1 0 auto;
+  border: 1px solid #2b352b;
+  background-color: #000000;
+  width: 100%;
+  min-height: 96px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+}
+
+.img-LogoHeader {
+  width: 200px;
+}
+
+.navBar-Header {
+  display: flex;
+  gap: 10px 15px;
+}
+.buttonNavBar-Header {
+  background-color: transparent;
+  border: 2px solid transparent;
+  font-size: 30px;
+  font-weight: 500;
+  color: #ffffff;
+  padding: 5px;
+  transition: ease-in-out 0.5s;
+}
+
+.buttonNavBar-Header:hover {
+  border-top: 2px solid #50964e;
+  border-bottom: 2px solid #50964e;
+  transform: translate(0, 2px);
+  cursor: pointer;
+}
+
+/*Inicio  section-MainContent*/
+.section-MainContent {
+  flex: 1 0 auto;
+  border: 1px solid goldenrod;
+  width: auto;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+  padding: 10px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+} /*Fim section-MainContent*/
+
+/*Inicio main-ContentHome */
+.main-ContentHome,
+.main-ContentProjects,
+.main-AreaStudy {
+  border: 1px solid #075c2a;
+  background-color: #0c0c0c;
+  width: 1440px;
+  height: 800px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  column-gap: 20px;
+
+  align-items: center;
+  justify-content: center;
+}
+
+.GreenKey-ContentHome {
+  border: 1px solid red;
+}
+
+.imgGreenKey-Home {
+  opacity: 0.4;
+}
+
+.box-ContentHome {
+  border: 1px solid goldenrod;
+  width: 880px;
+  height: auto;
+  display: flex;
+  justify-content: end;
+}
+
+.AspasContetHome {
+  border: 1px solid blue;
+  width: 200px;
+}
+
+.box-ContentTextHome {
+  width: 800px;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
+}
+.text-ContentTextHome {
+  border: 1px solid wheat;
+  color: #ffffff;
+  font-size: 30px;
+}
+
+.box-ContactIcons {
+  border: 1px solid yellow;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 20px;
+  justify-content: center;
+  align-items: end;
+}
+
+.img-ContactIcons {
+  background-color: #c0ecbe;
+  border-radius: 100%;
+  width: 80px;
+} /*Fim main-ContentHome */
+/* 
+.main-ContentProjects {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 15px 20px;
+  justify-content: space-evenly;
+  align-items: center;
+} */
+.titleAndText-ContentProject {
+  border: 1px solid orange;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+}
+.title-ContentProjects {
+  border: 1px solid blue;
+  color: #ffffff;
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.text-ContentProjects {
+  color: #ebf1ea;
+  font-size: 26px;
+}
+.img-WhiteKeySideBar {
+  border: 1px solid green;
+  width: 200px;
+}
+.content-cardProjects {
+  border: 1px solid red;
+  width: 800px;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px 20px;
+}
+
+.cards-MainContetntProjects {
+  border: 1px solid white;
+  background-color: #ebf1ea;
+  border-radius: 15px;
+  width: 280px;
+  height: 300px;
+}
+.content-Footer {
+  border-top: 0.2px solid #2b352b;
+  background-color: #000000;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 0;
+}
+.img-LogoNomeFooter {
+  width: 200px;
+}
+.button-TopFooter {
+  background-color: transparent;
+  border: 2px solid transparent;
+  font-size: 30px;
+  font-weight: 500;
+  color: #ffffff;
+  padding: 5px;
+  transition: ease-in-out 0.5s;
+}
+
+.button-TopFooter a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.button-TopFooter:hover {
+  border-top: 2px solid #50964e;
+  border-bottom: 2px solid #50964e;
+  transform: translate(0, 2px);
+  cursor: pointer;
+}
