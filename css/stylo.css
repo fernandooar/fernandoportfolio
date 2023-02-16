@@ -67,7 +67,7 @@ body {
 /*Inicio  section-MainContent*/
 .section-MainContent {
   flex: 1 0 auto;
-  border: 1px solid goldenrod;
+ 
   width: auto;
   min-height: 100vh;
   display: flex;
@@ -83,7 +83,7 @@ body {
 .main-ContentHome,
 .main-ContentProjects,
 .main-AreaStudy {
-  border: 1px solid #075c2a;
+  
   background-color: #0c0c0c;
   width: 1440px;
   height: 800px;
