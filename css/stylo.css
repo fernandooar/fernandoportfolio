@@ -382,3 +382,19 @@
   box-shadow: inset 200px 0 0 0 #5271ff;
   color: white;
 }
+
+
+@media(max-width:1050px){
+
+  .img-LogoNavBar{
+    width: 150px;
+    margin-bottom: 15px;
+  }
+
+  .s-ContentDescription{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+}
