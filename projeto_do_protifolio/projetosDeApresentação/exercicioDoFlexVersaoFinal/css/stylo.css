@@ -1,0 +1,362 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.header {
+  background-color: #292929;
+  width: 100%;
+  min-height: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 50px;
+  gap: 10px 15px;
+}
+
+.header ul {
+  list-style: none;
+  display: flex;
+  column-gap: 15px;
+}
+
+.header li a {
+  border: 2px solid transparent;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 1.6em;
+  padding: 10px;
+  transition: 0.7s;
+}
+
+.header li a:hover {
+  border: 2px solid #b90129;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  font-size: 1.6em;
+  padding: 10px;
+}
+
+.title-MainHeader {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.text-titleMainHeader {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-size: 1.2em;
+}
+
+.logo-imgObeBitHeader {
+  width: 200px;
+}
+
+.container {
+  background-color: #ffffff;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.title-main {
+  color: #292929;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+
+.main-content {
+  flex: 1 0 auto;
+  padding: 15px 40px;
+  gap: 10px 15px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas: "container-MainCards container-MainCards sideBarContent";
+}
+
+.container-MainCards {
+  grid-area: container-MainCards;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 20px;
+  justify-content: center;
+}
+
+.cards-mainContent {
+  border-radius: 10px;
+  border: 2px solid transparent;
+  background-color: white;
+  min-width: 280px;
+  height: 380px;
+  transition: 0.7s;
+}
+
+.cards-mainContent:hover {
+  border: 2px solid #292929;
+  transform: scale(1.03);
+  cursor: pointer;
+}
+
+.img-cards-mainContent {
+  width: 280px;
+  height: 160px;
+}
+
+.title-cardsMainContent {
+  font-size: 1.4em;
+  font-weight: 700;
+  padding: 5px;
+}
+.img-cards-mainContent {
+  border-radius: 10px;
+}
+.text-cardsMainContent {
+  width: 280px;
+  padding: 5px;
+}
+
+.sideBarContent {
+  grid-area: sideBarContent;
+  background-color: #383838;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 20px;
+  padding: 20px 10px;
+}
+
+.title-SiderBar {
+  color: #ffffff;
+  font-size: 1.4em;
+}
+
+.cardSideBar {
+  border: 2px solid transparent;
+  width: 284px;
+  height: 200px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  gap: 5px;
+  display: flex;
+  flex-direction: column;
+  transition: 0.7s;
+  align-items: center;
+  padding-bottom: 5px;
+}
+
+.cardSideBar:hover {
+  border: 2px solid #ffffff;
+  transform: scale(1.03);
+  cursor: pointer;
+}
+
+.title-cardSideBar {
+  color: #ffffff;
+  text-align: center;
+  padding: 5px;
+  font-size: 1.2em;
+}
+
+.img-cardSideBar {
+  width: 280px;
+  height: 160px;
+  border-radius: 10px;
+}
+
+.footer {
+  background-color: #292929;
+  width: 100%;
+  min-height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px;
+  gap: 15px;
+}
+
+.img-logoOneBitFooter {
+  width: 200px;
+}
+
+.footer p {
+  font-size: 1.8em;
+  color: #ffffff;
+  padding: 20px;
+}
+
+.footer a {
+  text-decoration: none;
+  color: #ffffff;
+}
+@media (max-width: 2560px) {
+  .main-content {
+    padding: 10px;
+    column-gap: 30px;
+  }
+  .container-MainCards {
+    gap: 10px 15px;
+  }
+}
+@media (max-width: 1024px) {
+  .container-MainCards {
+    min-width: 280px;
+    flex-direction: column;
+    margin-bottom: 15px;
+    justify-content: center;
+    align-items: center;
+  }
+  .main-content {
+    padding: 10px;
+    column-gap: 30px;
+  }
+  .container-MainCards {
+    gap: 10px 15px;
+  }
+}
+
+@media (max-width: 720px) {
+  .main-content {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  .container-MainCards {
+    grid-area: container-MainCards;
+    min-width: 280px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+  }
+
+  .sideBarContent {
+    width: 100%;
+  }
+}
+
+@media (max-width: 640px) {
+  .header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 15px;
+  }
+  .container-MainCards {
+    max-width: 280px;
+  }
+  .cardSideBar {
+    max-width: 280px;
+  }
+
+  .title-MainHeader {
+    font-size: 1.6em;
+  }
+
+  .text-titleMainHeader {
+    text-align: center;
+  }
+
+  .main-content {
+    align-items: center;
+  }
+
+  .sideBarContent {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer p {
+    font-size: 1.6em;
+  }
+}
+
+@media (max-width: 380px) {
+  .main-content {
+    justify-content: center;
+    align-content: center;
+  }
+
+  .header {
+    font-size: 0.8em;
+    width: 100%;
+  }
+
+  .container-MainCards {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    min-width: 260px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .sideBarContent {
+    min-width: 320px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .title-MainHeader {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 1.2em;
+  }
+
+  .text-titleMainHeader {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer {
+    width: 100%;
+  }
+}
+@media (max-width: 320px) {
+  .header {
+    min-width: auto;
+    justify-content: center;
+  }
+
+  .footer {
+    min-width: auto;
+  }
+
+  .container-MainCards {
+    min-width: auto;
+    justify-content: center;
+  }
+  .sideBarContent {
+    min-width: auto;
+  }
+  .cardSideBar {
+    min-width: auto;
+    flex-wrap: wrap;
+  }
+}
