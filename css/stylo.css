@@ -387,6 +387,7 @@
 @media(max-width:1050px){
 
   .img-LogoNavBar{
+    background-color: #5271ff;
     width: 150px;
     margin-bottom: 15px;
   }
