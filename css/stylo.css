@@ -164,6 +164,15 @@
   opacity: 0.1;
 }
 
+
+/*Inicio main-ContentHome */
+.main-ContentHome,
+.main-ContentProjects,
+.main-AreaStudy {
+  background-color: #0c0c0c;
+  width: 1440px;
+  height: 800px;}
+
 .img-LinkEdin {
   width: 60px;
 }
@@ -180,6 +189,7 @@
 }
 
 .s-ContentThecnologies {
+
   display: flex;
   flex-wrap: wrap;
   gap: 15px;
@@ -198,11 +208,13 @@
   padding: 15px;
 }
 
+
 .s-ContentText {
   display: flex;
   flex-direction: column;
   row-gap: 10px;
 }
+
 
 .s-Title {
   color: #2144e0;
