@@ -88,8 +88,7 @@
     "s-ContentMain_03 s-ContentMain_03 s-ContentMain_03";
 }
 
-.s-ContentMain {
-  
+.s-ContentMain {  
   width: 100%;
   height: auto;
 }
@@ -215,7 +214,6 @@
 }
 
 .s-ContentThecnologies{
-  border: 1px solid green;
   min-width: 300px;
   width: 100%;
   display: flex;
@@ -226,9 +224,7 @@
   padding: 12px;
 }
 .s-Technologies{
-  border: 1px solid red;
-  min-width: 300px;
- 
+  min-width: 300px; 
   width: 40%;
   height: auto;
   display: flex;
@@ -258,7 +254,7 @@
 }
 
 .s-ContentText{
-  border: 1px solid orange;
+  
   width: 40%;
   display: flex;
   flex-wrap: wrap;
@@ -268,7 +264,7 @@
 }
 
 .s-TextTechnologies{
-  border: 1px solid blue;
+  
   min-width: 300px;
   width: 40%;
   height: auto;
