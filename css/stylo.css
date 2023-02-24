@@ -13,6 +13,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   gap: 10px;
 }
 /*-------------*/
@@ -64,7 +65,7 @@
   border-top-right-radius: 12px;
   border-bottom-left-radius: 12px;
   text-decoration: none;
-  font-size: 24px;
+  font-size: 32px;
   box-shadow: inset 0 0 0 0 #54b3d6;
   color: #5271ff;
   margin: 0 -0.5rem;
@@ -83,7 +84,6 @@
 
 .s-MainContent {
   flex: 1 0 auto;
-  
   display: grid;
   gap: 40px;
   grid-template-columns: repeat(3, 1fr);
@@ -92,10 +92,12 @@
     "s-ContentMain_01 s-ContentMain_01 s-ContentMain_01"
     "s-ContentMain_02 s-ContentMain_02 s-ContentMain_02"
     "s-ContentMain_03 s-ContentMain_03 s-ContentMain_03";
+    align-content: center;
+    justify-items: center;
 }
 
 .s-ContentMain {  
-  width: 100%;
+ 
   height: auto;
 }
 
@@ -122,9 +124,10 @@
 .s-ContentMain_01{
   border: 1px solid #ac0e3d;
   background-color: #00000c;
-  width: 100%;
+  width: 70%;
   display: flex;
   flex-wrap: wrap;
+  column-gap: 30px;
   flex-direction: row;
   align-items: center;
   align-items: center;
@@ -168,17 +171,17 @@
 }
 
 .p-Name{
-  color: #e0ffff;
-  font-size: 28px;
+  color: #495174;
+  font-size: 40px;
 }
 
 .paragraph-Description{
-  color: #6b6de9;
+  color: #95a8ff;
   font-size: 24px;
   min-width: 300px;
 }
 .s-ContentIcons{ 
-  border: 1px solid red;
+ 
   width: 1200px;
   display: flex;
   column-gap: 15px;
@@ -201,12 +204,18 @@
   width: 60px;
 }
 
-.img-LinkEdin, .img-GitHub, .img-WhatsApp{
+.img-LinkEdin, 
+.img-GitHub, 
+.img-WhatsApp,
+.img-Instagram{
   width: 58px;
   transition: 0.8s ease-in-out; 
 }
 
-.img-LinkEdin:hover, .img-GitHub:hover, .img-WhatsApp:hover{
+.img-LinkEdin:hover, 
+.img-GitHub:hover, 
+.img-WhatsApp:hover, 
+.img-Instagram:hover{
   transform: scaleX(-1.3) scaleY(1.3) rotate(360deg) rotateY(-180deg);
 }
 
@@ -216,7 +225,7 @@
   flex: 1 0 auto;
   border: 1px solid #ac0e3d;
   background-color: #00000c;
-  width: 100%;
+  width: 70%;
   min-width: 330px;
   display: flex;
   flex-wrap: wrap;
@@ -311,7 +320,7 @@
   border: 1px solid #ac0e3d;
   background-color: #00000c;
   min-width: 330px;
-  width: 100%;
+  width: 70%;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -387,20 +396,21 @@
   padding: 15px;
 }
 
-.s-TitleProject{
 
-}
 .p-TitleAlt{
-  padding: 20px;
+  color: #193cdb;
+  font-size: 32px;
+  padding: 32px;
+
     
 }
 .p-TitleProjects{
   color: #193cdb;
-  font-size: 32px;
+  font-size: 28px;
 }
 .p-TextProjects{
   color: #e0ffff;
-  font-size: 24px;
+  font-size: 22px;
 }
 
 .link-ContentItem{
@@ -440,7 +450,7 @@
   border-top-right-radius: 12px;
   border-bottom-left-radius: 12px;
   text-decoration: none;
-  font-size: 28px;
+  font-size: 32px;
   box-shadow: inset 0 0 0 0 #54b3d6;
   color: #5271ff;
   margin: 0 -0.5rem;
