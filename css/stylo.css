@@ -60,6 +60,9 @@
 }
 
 .button-NavBarMenu li a {
+  border: 2px solid transparent;
+  border-top-right-radius: 12px;
+  border-bottom-left-radius: 12px;
   text-decoration: none;
   font-size: 24px;
   box-shadow: inset 0 0 0 0 #54b3d6;
@@ -70,6 +73,9 @@
 }
 
 .button-NavBarMenu li a:hover {
+  border: 2px solid #193cdb;
+  border-top-right-radius: 12px;
+  border-bottom-left-radius: 12px;
   box-shadow: inset 200px 0 0 0 #5271ff;
   color: white;
 }
@@ -77,9 +83,9 @@
 
 .s-MainContent {
   flex: 1 0 auto;
-  padding: 10px;
+  
   display: grid;
-  gap: 10px;
+  gap: 40px;
   grid-template-columns: repeat(3, 1fr);
   grid-template-areas:
     "s-ContentMain_0 s-ContentMain_0 s-ContentMain_0"
@@ -134,7 +140,7 @@
 }
 
 .img-FrontEnd{  
-  min-width: 100%;
+  min-width: 320px;
 }
 
 .s-ContentDescription{
@@ -204,6 +210,7 @@
   border: 1px solid #ac0e3d;
   background-color: #00000c;
   width: 100%;
+  min-width: 330px;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -214,18 +221,21 @@
 }
 
 .s-ContentThecnologies{
-  min-width: 300px;
+  
+  min-width: 320px;
   width: 100%;
+  height: auto;
+  min-height: 600px;
   display: flex;
   flex-wrap: wrap;
-  column-gap: 15px;
+  column-gap: 35px;
   justify-content: center;
-  align-items: center;
+  align-content: center;
   padding: 12px;
 }
 .s-Technologies{
-  min-width: 300px; 
-  width: 30%;
+  min-width: 320px; 
+  width: 40%;
   height: auto;
   display: flex;
   flex-wrap: wrap;
@@ -237,8 +247,10 @@
 
 .s-Item2{
   border: 1px solid #193cdb;
-  padding: 10px;
+  padding: 5px;
   margin: 5px;
+  border-top-right-radius: 12px;
+  border-bottom-left-radius: 12px;
 }
 
 .icon-html,
@@ -249,7 +261,7 @@
 .icon-React{
   width: 100px;
   min-width: 60px; 
-  padding: 12px;
+  padding: 8px;
 
 }
 
@@ -263,8 +275,13 @@
 }
 
 .s-TextTechnologies{  
-  min-width: 300px;
+  min-width: 320px;
   width: 32%;
+  min-height: 416px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
   height: auto;
   margin: 10px 0;
   padding: 10px;
@@ -282,6 +299,7 @@
   flex: 1 0 auto;
   border: 1px solid #ac0e3d;
   background-color: #00000c;
+  min-width: 330px;
   width: 100%;
   display: flex;
   flex-wrap: wrap;
@@ -307,14 +325,14 @@
   border: 2px solid #ad0739;
   border-top-right-radius: 14px;
   border-bottom-left-radius: 14px;
-  min-width: 320px;
+  min-width: 300px;
   width: 400px;
   height: 280px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: start;
-  padding: 20px 25px;
+  padding: 15px;
 }
 
 .s-ContentItem2 {
@@ -322,40 +340,40 @@
   border-top-right-radius: 14px;
   border-bottom-left-radius: 14px;
   width: 400px;
-  min-width: 320px;
+  min-width: 300px;
   height: 280px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: start;
-  padding: 10px 25px;
+  padding: 15px;
 }
 .s-ContentItem3 {
   border: 2px solid #e46917;
+  border-top-right-radius: 14px;
+  border-bottom-left-radius: 14px;
   width: 400px;
-  min-width: 320px;
+  min-width: 300px;
   height: 280px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: start;
-  padding: 10px;
-  border-top-right-radius: 14px;
-  border-bottom-left-radius: 14px;
+  padding: 15px;
 }
 
 .s-ContentItem4 {
   border: 2px solid #17e466;
+  border-top-right-radius: 14px;
+  border-bottom-left-radius: 14px;
   width: 400px;
-  min-width: 320px;
+  min-width: 300px;
   height: 280px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: start;
-  padding: 10px;
-  border-top-right-radius: 14px;
-  border-bottom-left-radius: 14px;
+  padding: 15px;
 }
 
 .s-TitleProject{
@@ -372,6 +390,12 @@
 .p-TextProjects{
   color: #e0ffff;
   font-size: 24px;
+}
+
+.link-ContentItem{
+  text-decoration: none;
+  color: #ac0e3d;
+  font-size: 22px;
 }
 /*-------------*/
 .footer {
@@ -400,7 +424,10 @@
   justify-content: center;
 }
 
-.btn-Footer {
+.btn-Footer a{
+  border: 2px solid transparent;
+  border-top-right-radius: 12px;
+  border-bottom-left-radius: 12px;
   text-decoration: none;
   font-size: 28px;
   box-shadow: inset 0 0 0 0 #54b3d6;
@@ -409,8 +436,10 @@
   padding: 2px 10px;
   transition: color 0.3s ease-in-out, box-shadow 0.5s ease-in-out;
 }
-
-.btn-Footer:hover {
+.btn-Footer a:hover {
+  border: 2px solid #193cdb;
+  border-top-right-radius: 12px;
+  border-bottom-left-radius: 12px;
   box-shadow: inset 200px 0 0 0 #5271ff;
   color: white;
 }
