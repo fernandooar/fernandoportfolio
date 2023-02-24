@@ -132,7 +132,11 @@
 }
 
 .s-ContentMainLeft{  
-  min-width: 400px;
+  border: 3px solid blue;
+  background: #28303f;
+  border-radius: 100%;
+  min-width: 300px;
+  width: 400px;
   display: flex;
   flex-wrap: wrap;
   opacity: 0.8;
@@ -141,6 +145,7 @@
 
 .img-FrontEnd{  
   min-width: 320px;
+ 
 }
 
 .s-ContentDescription{
@@ -168,12 +173,13 @@
 }
 
 .paragraph-Description{
-  color: #e0ffff;
-  font-size: 20px;
+  color: #6b6de9;
+  font-size: 24px;
   min-width: 300px;
 }
 .s-ContentIcons{ 
-  width: 100%;
+  border: 1px solid red;
+  width: 1200px;
   display: flex;
   column-gap: 15px;
   padding: 10px 0;
@@ -186,6 +192,7 @@
 .paragraph-Description a{
   text-decoration: none;
   color: #ac0e3d;
+  font-style: italic;
 }
 
 .img-GitHub, 
@@ -258,13 +265,17 @@
 .icon-Js,
 .icon-BootStrap,
 .icon-NodeJs,
-.icon-React{
+.icon-React,
+.icon-Saas,
+.icon-TypeScript{
   width: 100px;
   min-width: 60px; 
   padding: 8px;
-
 }
 
+.icon-React2{
+  width: 80px;
+}
 .s-ContentText{  
   width: 40%;
   display: flex;
