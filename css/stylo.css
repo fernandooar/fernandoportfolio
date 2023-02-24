@@ -224,7 +224,6 @@
   padding: 12px;
 }
 .s-Technologies{
-  border: 1px solid #17e466;
   min-width: 300px; 
   width: 30%;
   height: auto;
@@ -264,7 +263,6 @@
 }
 
 .s-TextTechnologies{  
-  border: 1px solid #990bdb;
   min-width: 300px;
   width: 32%;
   height: auto;
@@ -273,7 +271,7 @@
 }
 
 .paragraph-Technologies{
-  width: 600px;
+  width: 100%;
   color: #e0ffff;
   font-size: 20px;
   min-width: 300px;
@@ -294,7 +292,6 @@
 }
 
 .s-ContentProjectsBox{
-  border: 1px solid tomato;
   min-width: 320px;
   width: 60%;
   display: flex;
