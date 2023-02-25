@@ -5,7 +5,9 @@
   font-family: "Share Tech", sans-serif;
   
 }
-
+html{
+  scroll-behavior: smooth;
+}
 .container-Main {
   background-color: #000000;
   width: 100%;
@@ -177,7 +179,7 @@
 
 .paragraph-Description{
   color: #95a8ff;
-  font-size: 24px;
+  font-size: 26px;
   min-width: 300px;
 }
 .s-ContentIcons{ 
@@ -315,7 +317,7 @@
 
 .paragraph-Technologies{
   width: 100%;
-  color: #e0ffff;
+  color: #95a8ff;
   font-size: 26px;
   min-width: 300px;
 }
@@ -337,7 +339,7 @@
 
 .s-ContentProjectsBox{
   min-width: 320px;
-  width: 60%;
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   gap:20px;
@@ -471,3 +473,13 @@
   color: white;
 }
 /*-------------*/
+
+@media(max-width:1360px){
+
+.s-ContentMain_01{
+  padding-top: 20px;
+}
+.s-ContentDescription{
+  align-items: center;
+}
+}
