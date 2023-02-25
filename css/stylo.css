@@ -96,8 +96,8 @@
     justify-items: center;
 }
 
-.s-ContentMain {  
- 
+.s-ContentMain { 
+  width: ;
   height: auto;
 }
 
@@ -139,7 +139,7 @@
   background: #28303f;
   border-radius: 100%;
   min-width: 300px;
-  width: 400px;
+  width: 300px;
   display: flex;
   flex-wrap: wrap;
   opacity: 0.8;
@@ -147,7 +147,7 @@
 }
 
 .img-FrontEnd{  
-  min-width: 320px;
+  min-width: 280px;
  
 }
 
