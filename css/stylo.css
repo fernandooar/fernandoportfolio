@@ -495,7 +495,6 @@ min-width: 280px;
   min-height: 100px;
   display: flex;
   flex-wrap: wrap;
-  margin: 20px;
   justify-content: space-around;
   align-items: center;
 }
