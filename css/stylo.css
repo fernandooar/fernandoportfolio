@@ -8,8 +8,11 @@
 html{
   scroll-behavior: smooth;
 }
+
 .container-Main {
-  background-color: #000000;
+  /* background-image: url(../imagens/background.png); */
+  background: rgb(0,0,12);
+  background: linear-gradient(90deg, rgba(0,0,12,1) 0%, rgba(9,9,121,1) 44%, rgba(82,113,255,1) 99%);
   width: 100%;
   min-height: auto;
   display: flex;
@@ -87,7 +90,7 @@ html{
 .s-MainContent {
   flex: 1 0 auto;
   display: grid;
-  gap: 40px;
+  gap: 20px;
   grid-template-columns: repeat(3, 1fr);
   grid-template-areas:
     "s-ContentMain_0 s-ContentMain_0 s-ContentMain_0"
@@ -99,7 +102,7 @@ html{
 }
 
 .s-ContentMain { 
-  width: ;
+  width: 100%;
   height: auto;
 }
 
@@ -137,8 +140,8 @@ html{
 }
 
 .s-ContentMainLeft{  
-  border: 3px solid blue;
-  background: #28303f;
+  border: 3px solid #495174;
+  background-image: url(../imagens/photo.png);
   border-radius: 100%;
   min-width: 300px;
   width: 300px;
@@ -146,10 +149,15 @@ html{
   flex-wrap: wrap;
   opacity: 0.8;
   padding: 10px;  
+  align-items: center;
+ justify-content: center;
 }
 
 .img-FrontEnd{  
-  min-width: 280px;
+min-width: 280px;
+ border-radius: 100%;
+ display: flex;
+ opacity: 0.9;
  
 }
 
@@ -224,6 +232,7 @@ html{
 
 /*-------------*/
 .s-ContentMain_02{
+ 
   flex: 1 0 auto;
   border: 1px solid #ac0e3d;
   background-color: #00000c;
@@ -232,13 +241,12 @@ html{
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  column-gap: 15px;
-  align-items: center;
+  column-gap: 15px;  
   align-items: center;
   justify-content: center; 
 }
 
-.s-ContentThecnologies{
+.s-ContentThecnologies{  
   min-width: 320px;
   width: 100%;
   height: auto;
@@ -250,36 +258,82 @@ html{
   align-content: center;
   padding: 12px;
 }
-.s-Technologies{
+.s-Technologies{ 
   min-width: 320px; 
-  width: 40%;
+  width: 60%;
   height: auto;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  gap: 12px;
+  gap: 15px;
   justify-content: center;
   align-items: center;
 }
 
-.s-Item2{
-  border: 1px solid transparent;
-  padding: 5px;
-  margin: 5px;
-  border-top-right-radius: 12px;
-  border-bottom-left-radius: 12px;
-  transition: 1s  ease-in-out;
-}
-
-.s-Item2:hover{
+#s-html,
+#s-Css3,
+#s-JScript,
+#s-BStrap,
+#s-NodeJS,
+#s-React,
+#s-TScript,
+#s-Saas,
+#s-MongoDB{
   border: 1px solid #193cdb;
-  padding: 5px;
-  margin: 5px;
-  border-top-right-radius: 12px;
-  border-bottom-left-radius: 12px;
-  transform: scale( 1.2) ;
+  border-top-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  color: #193cdb;
+  width: 150px;
+  height: 210px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  row-gap: 10px;
+  padding: 10 0px;
+  margin: 10 0px;
+  justify-content: center;
+  align-items: center;
   
 }
+
+#s-html a,
+#s-Css3 a,
+#s-JScript a,
+#s-BStrap a,
+#s-NodeJS a,
+#s-React a,
+#s-TScript a,
+#s-Saas a,
+#s-MongoDB a{
+  
+  text-decoration: none;
+  color: #193cdb;
+}
+
+#s-html a:hover,
+#s-Css3 a:hover,
+#s-JScript a:hover,
+#s-BStrap a:hover,
+#s-NodeJS a:hover,
+#s-React a:hover,
+#s-TScript a:hover,
+#s-Saas a:hover,
+#s-MongoDB a:hover{ 
+  color: #00000c;
+  border: 1px solid #193cdb; 
+  background-color: #95a8ff;
+  padding: 5px;
+   
+}
+
+.text-Skill{  
+  width: 100%;
+  color: #95a8ff;
+  font-size: 18px;
+  padding: 0 10px;
+  text-align: center;
+}
+
 .icon-html,
 .icon-css3,
 .icon-Js,
@@ -287,7 +341,8 @@ html{
 .icon-NodeJs,
 .icon-React,
 .icon-Saas,
-.icon-TypeScript{
+.icon-TypeScript,
+.icon-MongoDB{
   width: 100px;
   min-width: 60px; 
   padding: 8px;
@@ -302,14 +357,15 @@ html{
   padding: 10px;
 }
 
-.s-TextTechnologies{  
+.s-TextTechnologies{   
+  display: none;
   min-width: 320px;
-  width: 50%;
+  width: 60%;
   min-height: 416px;
   display: flex;
   flex-direction: column;
-  align-items: start;
-  justify-content: start;
+  align-items: center;
+  justify-content: center;
   height: auto;
   margin: 10px 0;
   padding: 10px;
@@ -320,6 +376,11 @@ html{
   color: #95a8ff;
   font-size: 26px;
   min-width: 300px;
+  margin: 10px;
+  padding: 10px 0;
+}
+.p-Mensage{
+  font-style: italic;
 }
 
 /*-------------*/
@@ -418,7 +479,7 @@ html{
   font-size: 28px;
 }
 .p-TextProjects{
-  color: #e0ffff;
+  color: #5271ff;
   font-size: 22px;
 }
 
@@ -435,6 +496,7 @@ html{
   min-height: 100px;
   display: flex;
   flex-wrap: wrap;
+  margin: 20px;
   justify-content: space-around;
   align-items: center;
 }
