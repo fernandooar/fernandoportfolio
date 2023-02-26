@@ -109,16 +109,16 @@ html{
 
 .s-ContentMain_0 {
   grid-area: s-ContentMain_0;
-  min-width: 320px
+  min-width: 340px
 }
 .s-ContentMain_01 {
   grid-area: s-ContentMain_01;
-  min-width: 320px
+  min-width: 340px
 }
 
 .s-ContentMain_02 {
   grid-area: s-ContentMain_02;
-  min-width: 320px
+  min-width: 340px
 }
 
 .s-ContentMain_03 {
@@ -231,8 +231,7 @@ min-width: 280px;
 
 
 /*-------------*/
-.s-ContentMain_02{
- 
+.s-ContentMain_02{ 
   flex: 1 0 auto;
   border: 1px solid #ac0e3d;
   background-color: #00000c;
@@ -545,4 +544,19 @@ min-width: 280px;
 .s-ContentDescription{
   align-items: center;
 }
+}
+
+
+@media(max-width:1180px){
+
+  .s-ContentMain_02{
+    width: 80%;
+  }
+  .s-ContentDescription{
+    align-items: center;
+  }
+  .s-Technologies{
+    width: 90%;
+   }
+
 }
