@@ -451,7 +451,7 @@ html{
 
 
 .s-ContentItem4 {
-  border: 2px solid #17e466;
+  
   border-top-right-radius: 14px;
   border-bottom-left-radius: 14px;
   width: 400px;
@@ -578,38 +578,36 @@ html{
 
 .text-Description{
     font-size: 22px;
-    }
+ }
 .p-Title{
       font-size: 22px;
-    }
+}
 .p-Name{
       font-size: 24px;
-    }
+ }
 .paragraph-Description{
       width: 100;
       font-size: 20px;
-    }
+}
 .paragraph-Technologies{
         font-size: 20px;
-      }
+}
     
 .s-ContentProjectsBox{
         min-width: 320px;
-      }
+}
 .s-ContentMain_03{
         width: 80%;
         justify-content: center;
         align-items: center;
            
-      }
+}
 .s-ContentItem1,
 .s-ContentItem2,
 .s-ContentItem3,
 .s-ContentItem4{   
     width: 80%;
-  }
-
-  
+}  
 
 .p-TitleProjects{
    font-size: 22px;
@@ -672,9 +670,7 @@ html{
 .s-ContentMainLeft{
    min-width: 240px;
   }
-.img-MyPhoto{
-    width: 140px;
-  }
+  
 .s-ContentIcons{
   display: flex;
   width: 280px;
