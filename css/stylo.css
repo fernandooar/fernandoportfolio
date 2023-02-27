@@ -129,6 +129,7 @@ html{
 .s-ContentMain_01{
   border: 1px solid #ac0e3d;
   background-color: #00000c;
+  min-width: 240px;
   width: 70%;
   display: flex;
   flex-wrap: wrap;
@@ -144,7 +145,7 @@ html{
   background-image: url(../imagens/photo.png);
   border-radius: 100%;
   min-width: 300px;
-  width: 300px;
+  width: 25%;
   display: flex;
   flex-wrap: wrap;
   opacity: 0.8;
@@ -153,8 +154,8 @@ html{
  justify-content: center;
 }
 
-.img-FrontEnd{  
-min-width: 280px;
+.img-MyPhoto{  
+ min-width: 220px;
  border-radius: 100%;
  display: flex;
  opacity: 0.9;
@@ -208,11 +209,6 @@ min-width: 280px;
   font-style: italic;
 }
 
-.img-GitHub, 
-.img-WhatsApp
-{  
-  width: 60px;
-}
 
 .img-LinkEdin, 
 .img-GitHub, 
@@ -236,7 +232,7 @@ min-width: 280px;
   border: 1px solid #ac0e3d;
   background-color: #00000c;
   width: 70%;
-  min-width: 330px;
+  min-width: 340px;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -388,7 +384,7 @@ min-width: 280px;
   flex: 1 0 auto;
   border: 1px solid #ac0e3d;
   background-color: #00000c;
-  min-width: 330px;
+  min-width: 340px;
   width: 70%;
   display: flex;
   flex-wrap: wrap;
@@ -399,7 +395,8 @@ min-width: 280px;
 }
 
 .s-ContentProjectsBox{
-  min-width: 320px;
+  border: 1px solid green;
+  min-width: 330px;
   width: 100%;
   display: flex;
   flex-wrap: wrap;
@@ -414,13 +411,13 @@ min-width: 280px;
   border: 2px solid #ad0739;
   border-top-right-radius: 14px;
   border-bottom-left-radius: 14px;
-  min-width: 300px;
+  min-width: 320px;
   width: 400px;
   height: 280px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: start;
+  justify-content: center;
   padding: 15px;
 }
 
@@ -429,12 +426,12 @@ min-width: 280px;
   border-top-right-radius: 14px;
   border-bottom-left-radius: 14px;
   width: 400px;
-  min-width: 300px;
+  min-width: 320px;
   height: 280px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: start;
+  justify-content: center;
   padding: 15px;
 }
 .s-ContentItem3 {
@@ -442,26 +439,28 @@ min-width: 280px;
   border-top-right-radius: 14px;
   border-bottom-left-radius: 14px;
   width: 400px;
-  min-width: 300px;
+  min-width: 320px;
   height: 280px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: start;
+  justify-content: center;
   padding: 15px;
 }
+
+
 
 .s-ContentItem4 {
   border: 2px solid #17e466;
   border-top-right-radius: 14px;
   border-bottom-left-radius: 14px;
   width: 400px;
-  min-width: 300px;
+  min-width: 320px;
   height: 280px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: start;
+  justify-content: center;
   padding: 15px;
 }
 
@@ -469,13 +468,13 @@ min-width: 280px;
 .p-TitleAlt{
   color: #193cdb;
   font-size: 32px;
-  padding: 32px;
+  padding: 10px;
 
     
 }
 .p-TitleProjects{
   color: #193cdb;
-  font-size: 28px;
+  font-size: 26px;
 }
 .p-TextProjects{
   color: #5271ff;
@@ -495,6 +494,7 @@ min-width: 280px;
   min-height: 100px;
   display: flex;
   flex-wrap: wrap;
+  
   justify-content: space-around;
   align-items: center;
 }
@@ -536,7 +536,9 @@ min-width: 280px;
 /*-------------*/
 
 @media(max-width:1360px){
-
+  .s-MainContent{      
+    width: 100%;
+}
 .s-ContentMain_01{
   padding-top: 20px;
 }
@@ -549,13 +551,162 @@ min-width: 280px;
 @media(max-width:1180px){
 
   .s-ContentMain_02{
-    width: 80%;
+    width: 70%;
   }
   .s-ContentDescription{
     align-items: center;
+    width: 100%;
   }
   .s-Technologies{
-    width: 90%;
+    width: 80%;
    }
 
+}
+
+
+@media(max-width: 920px){
+   .s-MainContent{      
+      width: 100%;
+  }
+
+.s-ContentProjectsBox{
+   min-width: 360px;
+   width: 80%;
+   justify-items: center;
+   align-items: center;
+  }
+
+.text-Description{
+    font-size: 22px;
+    }
+.p-Title{
+      font-size: 22px;
+    }
+.p-Name{
+      font-size: 24px;
+    }
+.paragraph-Description{
+      width: 100;
+      font-size: 20px;
+    }
+.paragraph-Technologies{
+        font-size: 20px;
+      }
+    
+.s-ContentProjectsBox{
+        min-width: 320px;
+      }
+.s-ContentMain_03{
+        width: 80%;
+        justify-content: center;
+        align-items: center;
+           
+      }
+.s-ContentItem1,
+.s-ContentItem2,
+.s-ContentItem3,
+.s-ContentItem4{   
+    width: 80%;
+  }
+
+  
+
+.p-TitleProjects{
+   font-size: 22px;
+}
+.p-TextProjects{
+  color: #5271ff;
+  font-size: 18px;
+}
+
+.link-ContentItem{
+  text-decoration: none;
+  color: #ac0e3d;
+  font-size: 18px;
+}
+}
+
+
+@media(max-width: 768px){
+  .s-ContentMain_01,
+  .s-ContentMain_02,
+  .s-ContentMain_03{
+    width: 90%;
+  }
+.text-Description{
+    font-size: 22px;
+    }
+    
+.paragraph-Description{
+      font-size: 20px;
+    }
+.paragraph-Technologies{
+        font-size: 20px;
+      }
+    
+.s-ContentProjectsBox{
+        min-width: 320px;
+      }
+
+}
+
+@media(max-width: 380px){
+.s-MainContent{
+    width: 100%;
+  }
+
+  .s-ContentMain_01,
+  .s-ContentMain_02,
+  .s-ContentMain_03{
+    width: 90%;
+  }
+.img-LogoNavBar{
+    width: 180px;
+  }
+.s-NavBarMenu ul {   
+    column-gap: 10px;
+  }
+.s-NavBarMenu ul li a{
+    font-size: 20px;
+  }
+.s-ContentMainLeft{
+   min-width: 240px;
+  }
+.img-MyPhoto{
+    width: 140px;
+  }
+.s-ContentIcons{
+  display: flex;
+  width: 280px;
+  flex-direction: row;
+}
+.img-LinkEdin, 
+.img-GitHub, 
+.img-WhatsApp,
+.img-Instagram{
+  width: 48px;
+  
+}
+
+.s-ContentDescription{
+  border: 1px solid red;
+  min-width: 320px;
+}
+
+.s-ContentItem1,
+.s-ContentItem2,
+.s-ContentItem3,
+.s-ContentItem4{  
+  min-width: 300px; 
+    width: 70%;
+  }
+.paragraph-Description{
+  font-size: 18px;
+}
+.img-LogoFooter {
+  width: 180px;
+}
+.btn-Footer a{
+  font-size: 22px;
+}
 }
