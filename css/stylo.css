@@ -142,7 +142,7 @@ html{
 
 .s-ContentMainLeft{  
   border: 3px solid #495174;
-  background-image: url(../imagens/photo.png);
+  
   border-radius: 100%;
   min-width: 300px;
   width: 25%;
@@ -395,7 +395,7 @@ html{
 }
 
 .s-ContentProjectsBox{
-  border: 1px solid green;
+  
   min-width: 330px;
   width: 100%;
   display: flex;
@@ -451,7 +451,7 @@ html{
 
 
 .s-ContentItem4 {
-  
+  border: 2px solid #41dd68;
   border-top-right-radius: 14px;
   border-bottom-left-radius: 14px;
   width: 400px;
