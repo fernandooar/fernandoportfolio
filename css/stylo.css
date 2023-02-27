@@ -106,11 +106,11 @@ html{
   height: auto;
 }
 
-
 .s-ContentMain_0 {
   grid-area: s-ContentMain_0;
   min-width: 340px
 }
+
 .s-ContentMain_01 {
   grid-area: s-ContentMain_01;
   min-width: 340px
@@ -141,11 +141,11 @@ html{
 }
 
 .s-ContentMainLeft{  
-  border: 3px solid #495174;
-  
+  border: 3px solid #495174;  
+  background-image: url(../imagens/photo.png);
   border-radius: 100%;
   min-width: 300px;
-  width: 25%;
+  width: 22%;
   display: flex;
   flex-wrap: wrap;
   opacity: 0.8;
@@ -156,6 +156,7 @@ html{
 
 .img-MyPhoto{  
  min-width: 220px;
+ width: 300px;
  border-radius: 100%;
  display: flex;
  opacity: 0.9;
